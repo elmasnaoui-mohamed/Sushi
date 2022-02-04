@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Link -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css"
+    />
+
+    <title>Sushi</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Sushisushi" draggable="false" />
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <a href="#overlay">
+            <span>Home</span>
+          </a>
+          <a href="#menu">
+            <span>Menu</span>
+          </a>
+          <a href="#about-us">
+            <span>About us</span>
+          </a>
+          <a href="#contact-us">
+            <span>Contact us</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Loader -->
+    <div class="loader">
+      <span uk-spinner="ratio: 4.5"></span>
+      Loading...
+    </div>
+    <!-- End Loader -->
+    <!-- Start Contact by Phone or Email and Up button -->
+    <div class="phone-email">
+      <a href="" class="up"
+        ><span>Back to Top</span><i class="fas fa-chevron-up"></i
+      ></a>
+      <a href="mailto:simokunx@gmail.com" class="email">
+        <span>Email Us</span><i class="fas fa-envelope"></i
+      ></a>
+      <a href="tel:+212651771053" target="_blanck" class="phone">
+        <span>Call Us</span>
+        <i class="fas fa-phone"></i
+      ></a>
+    </div>
+    <!-- End Contact by Phone or Email and Up button  -->
+    <!-- Start OverLay -->
+    <section id="overlay" class="overlay">
+      <div class="uk-slider-container-offset" uk-slider>
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light slider-container"
+          tabindex="-1"
+        >
+          <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+            <li class="uk-width-4-5 slider-item">
+              <div class="uk-panel">
+                <img src="images/overlay-img1.jpg" alt="" />
+                <div class="uk-position-center uk-text-center item-desc">
+                  <h2 uk-slider-parallax="x: 100,-100">
+                    ACE Sushi: Keeping It Fresh
+                  </h2>
+                </div>
+              </div>
+            </li>
+            <li class="uk-width-4-5 slider-item">
+              <div class="uk-panel">
+                <img src="images/overlay-img2.jpg" alt="" />
+                <div class="uk-position-center uk-text-center item-desc">
+                  <h2 uk-slider-parallax="x: 100,-100">
+                    Made Fresh. Rolled Daily.
+                  </h2>
+                </div>
+              </div>
+            </li>
+            <li class="uk-width-4-5 slider-item">
+              <div class="uk-panel">
+                <img src="images/overlay-img3.jpg" alt="" />
+                <div class="uk-position-center uk-text-center item-desc">
+                  <h2 uk-slider-parallax="x: 100,-100">Chef Prepared Sushi</h2>
+                </div>
+              </div>
+            </li>
+            <li class="uk-width-4-5 slider-item">
+              <div class="uk-panel">
+                <img src="images/overlay-img4.jpg" alt="" />
+                <div class="uk-position-center uk-text-center item-desc">
+                  <h2 uk-slider-parallax="x: 100,-100">Roll with ACE Sushi</h2>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-previous
+            uk-slider-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            uk-slidenav-next
+            uk-slider-item="next"
+          ></a>
+        </div>
+
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+      </div>
+      <!-- <div
+        class="uk-position-relative uk-visible-toggle uk-light slider-container"
+        tabindex="-1"
+        uk-slider
+      >
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-4-5 slider-item">
+            <div class="uk-panel">
+              <img src="images/overlay-img1.jpg" alt="" />
+              <div class="uk-position-center uk-text-center item-desc">
+                <h2 uk-slider-parallax="x: 100,-100">
+                  ACE Sushi: Keeping It Fresh
+                </h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5 slider-item">
+            <div class="uk-panel">
+              <img src="images/overlay-img2.jpg" alt="" />
+              <div class="uk-position-center uk-text-center item-desc">
+                <h2 uk-slider-parallax="x: 100,-100">
+                  Made Fresh. Rolled Daily.
+                </h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5 slider-item">
+            <div class="uk-panel">
+              <img src="images/overlay-img3.jpg" alt="" />
+              <div class="uk-position-center uk-text-center item-desc">
+                <h2 uk-slider-parallax="x: 100,-100">Chef Prepared Sushi</h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5 slider-item">
+            <div class="uk-panel">
+              <img src="images/overlay-img4.jpg" alt="" />
+              <div class="uk-position-center uk-text-center item-desc">
+                <h2 uk-slider-parallax="x: 100,-100">Roll with ACE Sushi</h2>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <a
+          class="uk-position-center-left uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-previous
+          uk-slider-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-next
+          uk-slider-item="next"
+        ></a>
+      </div> -->
+    </section>
+    <!-- End OverLay -->
+    <!-- Start Healty -->
+    <section class="healthy">
+      <div class="container">
+        <img src="images/healthy.svg" alt="" draggable="false" />
+        <div class="desc">
+          <p>
+            We offer fresh, high-quality sushi and fusion items by
+            specially-trained chefs in a convenient grab-and-go packages as well
+            as made-to-order items. Over the years, we have expanded to diverse
+            marketplaces across the globe.
+          </p>
+          <p>
+            In order to continually better serve our customers, ACE is regularly
+            introducing new items to the market. Because of ever- changing
+            consumer, tastes and needs and our forward-thinking approach, we
+            address specific dietary need, including Koasher, gluten-free and
+            vegetarian option as well as a position make sustainable seafood
+            choices.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Healty -->
+    <!-- Start Gallery -->
+    <section class="gallery">
+      <img src="images/gallery1.jpg" alt="" draggable="false" />
+    </section>
+    <!-- End Gallery -->
+    <!-- Start Menu -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2>OUR MENU</h2>
+        <p>
+          We continues to introduce many exciting types of Asian cuisine across
+          the United States. We provide a large selection of freshly prepared
+          sushi and Asian fusion cuisine that address specific needs including
+          Kosher, gluten-free, and vegetarian. All of our products are assembled
+          and handcrafted with precision.
+        </p>
+        <h2>ALL PRODUCTS</h2>
+        <div class="menu-content">
+          <div class="menu-item">
+            <div class="overlay-menu">California Roll (Spicy)</div>
+            <img
+              src="images/California Roll (Spicy).png"
+              alt="California Roll (Spicy)"
+            />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">California Roll</div>
+            <img src="images/California Roll.png" alt="California Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">Golden Dragon Roll</div>
+            <img src="images/Golden Dragon Roll.png" alt="Golden Dragon Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">Salmon Roll</div>
+            <img src="images/Salmon Roll.png" alt="Salmon Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">California Roll (Spicy)</div>
+            <img
+              src="images/California Roll (Spicy).png"
+              alt="California Roll (Spicy)"
+            />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">California Roll</div>
+            <img src="images/California Roll.png" alt="California Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">Golden Dragon Roll</div>
+            <img src="images/Golden Dragon Roll.png" alt="Golden Dragon Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">Salmon Roll</div>
+            <img src="images/Salmon Roll.png" alt="Salmon Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">California Roll (Spicy)</div>
+            <img
+              src="images/California Roll (Spicy).png"
+              alt="California Roll (Spicy)"
+            />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">California Roll</div>
+            <img src="images/California Roll.png" alt="California Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">Golden Dragon Roll</div>
+            <img src="images/Golden Dragon Roll.png" alt="Golden Dragon Roll" />
+          </div>
+          <div class="menu-item">
+            <div class="overlay-menu">Salmon Roll</div>
+            <img src="images/Salmon Roll.png" alt="Salmon Roll" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Menu -->
+    <!-- Start About us -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+        <h2>ABOUT US</h2>
+        <div class="desc">
+          <p>
+            Since 1990, ACE has been introducing and growing the
+            supermarket-based food service kiosk concept with our on-site, fresh
+            sushi and delicious Asian cuisine items. We offer fresh,
+            high-quality sushi by our specially-trained chefs in convenient
+            grab-and-go packages. Over the years this concept along with our
+            footprint has expanded across the globe to over 1000 diverse
+            locations.
+          </p>
+          <p>
+            Our ultimate goal is to understand, meet and exceed our customers’
+            needs and expectations. We are working earnestly to bring our
+            healthy and easy-to-serve products to every corner of the United
+            States and beyond. Our tens of thousands of loyal customers
+            throughout the years have been the driving force behind us to
+            continue our quest to achieve this goal.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About us -->
+    <!-- Start Contact us -->
+    <section id="contact-us" class="contact-us">
+      <div class="container">
+        <h2>LET’S GET IN TOUCH</h2>
+        <form autocomplete="off">
+          <div class="fullName">
+            <input
+              type="text"
+              name="firstName"
+              id=""
+              placeholder="First Name"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              name="lastName"
+              id=""
+              required
+              placeholder="Last Name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="phoneEmail">
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              name="phone"
+              id=""
+              placeholder="Phone"
+              required
+              autocomplete="off"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+            />
+          </div>
+          <div class="message">
+            <textarea
+              name="message"
+              id=""
+              placeholder="Message"
+              required
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <button>Submit Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact us -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="logo-about-us">
+          <img src="images/logo.png" alt="" />
+          <p>
+            Since 1990, ACE has been introducing and growing the
+            supermarket-based food service kiosk concept with our on-site, fresh
+            sushi and delicious Asian cuisine items. We offer fresh,
+            high-quality sushi by our specially-trained chefs in convenient
+            grab-and-go packages. Over the years this concept along with our
+            footprint has expanded across the globe to over 1000 diverse
+            locations.
+          </p>
+        </div>
+        <ul class="location-info">
+          <li>
+            <span>MONDAY – SUNDAY:</span> <br />
+            SERVICE FROM NOON TO 11 PM
+          </li>
+          <li>Marrakech Massira 1</li>
+        </ul>
+        <ul class="get-in-touch">
+          <li>
+            <a href="#"><img src="images/app store.png" alt="app store" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/google play store.png" alt="google play store"
+            /></a>
+          </li>
+        </ul>
+        <ul class="social-media">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+              Facebook.com/Sushi
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+              Instagram.com/Sushi
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">Sushi &#169; <span class="year"></span></div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

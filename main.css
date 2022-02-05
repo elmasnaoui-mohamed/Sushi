@@ -237,45 +237,51 @@ header > div nav a span::after {
 }
 
 /* End Header style */
-/* Start overlay style 
+/* Start overlay style */
 .overlay {
   width: 100%;
   margin-top: 49px;
-  .uk-slider-container-offset {
-    padding: 0 !important;
-    margin: 0 !important;
+}
+
+.overlay .uk-slider-container-offset {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.overlay .slider-container .uk-slider-items {
+  height: calc(100vh - 49px);
+}
+
+.overlay .slider-container .uk-slider-items .slider-item {
+  width: 100%;
+}
+
+.overlay .slider-container .uk-slider-items .slider-item .uk-panel {
+  height: 100%;
+}
+
+.overlay .slider-container .uk-slider-items .slider-item .uk-panel img {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay .slider-container .uk-slider-items .slider-item .uk-panel .item-desc {
+  background: rgba(35, 55, 72, 0.8);
+  width: 100%;
+  padding: 15px;
+  color: var(--white);
+}
+
+.overlay .slider-container .uk-slider-items .slider-item .uk-panel .item-desc h2 {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .overlay .uk-slider-items {
+    height: calc(50vh - 49px) !important;
   }
-  .slider-container {
-    .uk-slider-items {
-      height: calc(100vh - 49px);
-      .slider-item {
-        width: 100%;
-        .uk-panel {
-          height: 100%;
-          img {
-            height: 100%;
-            width: 100%;
-          }
-          .item-desc {
-            background: rgba(#233748, $alpha: 0.8);
-            width: 100%;
-            padding: 15px;
-            color: var(--white);
-            h2 {
-              margin-top: 20px;
-            }
-          }
-        }
-      }
-      
-    }
-  }
-  @media only screen and (max-width: 767px) {
-    & .uk-slider-items {
-      height: calc(50vh - 49px) !important;
-    }
-  }
-}*/
+}
+
 /* End overlay style */
 /* Start Contact by Phone or Email and Up button  */
 .phone-email {

@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --main-color: #f26224;
+  --main-color: rgb(229,22,22);
   --mainBg-color: #233748;
   --p-color: #dcdcdc;
   --white: white;
